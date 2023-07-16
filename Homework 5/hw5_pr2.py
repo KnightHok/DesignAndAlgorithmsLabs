@@ -1,3 +1,5 @@
+# This problem is pseudopolynomial
+
 # Subproblem - The subproblem is to add all other indexes other than the current index
 # After add to possible sums that can be achieved using a subset of nums
 

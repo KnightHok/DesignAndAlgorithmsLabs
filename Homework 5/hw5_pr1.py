@@ -1,3 +1,5 @@
+# This problem is pseudopolynomial
+
 def max_value_in_knapsack_iter(max_size, values, sizes):
     n = len(values)
 

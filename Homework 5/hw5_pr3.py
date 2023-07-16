@@ -1,4 +1,18 @@
-def costToPaint(costs: [int]):
+# This problem is pseudopolynomial
+
+# Subproblem - take all the cost that don't equal the current house paint cost and find the minimum
+
+# Relation - dp[i][j] = costs[i][j] + min(dp[i-1][k] for k in range(numOfColors) if k != j)
+
+# Topological Order - From left to right iterating over the houses
+
+# Base - dp[0] = costs[0]
+
+# Original - costToPaint(n)
+
+# Time - O(n * m)
+
+def costToPaint_iter(costs: [int]):
 
     # the h
     numOfHouses = len(costs)
@@ -42,4 +56,4 @@ def costToPaint(costs: [int]):
 if __name__ == "__main__":
     costs = [[8, 2, 4], [10, 4, 20], [6, 3, 4], [4, 8, 7]]
 
-    print(costToPaint(costs))
+    print(costToPaint_iter(costs))
